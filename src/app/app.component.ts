@@ -10,7 +10,7 @@ export class AppComponent  {
    
   title = 'Lazy Loading Module!';
   name= 'Rahul Sahay';
-  print() {
+  reverse() {
     import('./print-output').then(module => {
       this.name = module.printMessage(this.name);
     });
