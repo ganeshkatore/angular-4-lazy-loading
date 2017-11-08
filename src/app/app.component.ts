@@ -10,9 +10,17 @@ export class AppComponent  {
    
   title = 'Lazy Loading Module!';
   name= 'Rahul Sahay';
+
+  // reverse() {
+  //   import('./print-output').then(module => {
+  //     this.name = module.printMessage(this.name);
+  //   });
+  // }
+
+  //Another Version 
   reverse() {
     import('./print-output').then(module => {
-      this.name = module.printMessage(this.name);
+      this.name = module.someModule.prototype.printMessage(this.name);
     });
   }
 }
