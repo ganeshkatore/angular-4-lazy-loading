@@ -6,19 +6,13 @@ import { Route, Router } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
-  loading:boolean;
-  constructor(private router: Router){
-    this.loading=true;
-  }
-  ngOnInit() {
-    //This is mimicking service call in a sense say REST Call
-    setTimeout(()=>{
-        this.router.navigate(['/lazy/load-movie']);
-        
-        },3000);
-        this.loading=false;
-  }
+export class AppComponent  {
+   
+  title = 'Lazy Loading Module!';
 
-  title = 'Lazy Load Demo!';
+  print() {
+    import('./print-output').then(module => {
+      this.title = module.printMessage(this.title);
+    });
+  }
 }
