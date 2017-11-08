@@ -9,10 +9,10 @@ import { Route, Router } from '@angular/router';
 export class AppComponent  {
    
   title = 'Lazy Loading Module!';
-
+  name= 'Rahul Sahay';
   print() {
     import('./print-output').then(module => {
-      this.title = module.printMessage(this.title);
+      this.name = module.printMessage(this.name);
     });
   }
 }
