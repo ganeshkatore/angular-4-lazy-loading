@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { LoggingService } from './logging-service';
 
 
 @NgModule({
@@ -10,10 +11,11 @@ import { AppComponent } from './app.component';
    
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    
    
   ],
-  providers: [],
+  providers: [LoggingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
