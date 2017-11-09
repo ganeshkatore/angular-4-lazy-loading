@@ -29,7 +29,7 @@ export class AppComponent implements OnInit  {
   }
   constructor(private logging:LoggingService){}
   ngOnInit(): void {
-   
+   this.logging.logToConsole('something logged!')
     
     setTimeout(()=>{
       import('./print-output').then(module=>{
