@@ -1,10 +1,11 @@
 import { LoggingService } from "./logging-service";
-import { NgModule, Injector } from '@angular/core';
+import { NgModule, Injector, CompilerFactory } from '@angular/core';
 import { CommonModule } from "@angular/common";
 import { LazyMoviesComponent } from "./lazy-movies/lazy-movies.component";
 import { Router, RouterModule, Routes } from "@angular/router";
 import { AppRoutingModule } from "./app-routing.module";
 import { LazyModule } from "./lazy.module";
+import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
 
 // export function printMessage(input: string) {
 //     return input.split('').reverse().join('');
@@ -42,8 +43,10 @@ import { LazyModule } from "./lazy.module";
 })
 
 export class someModule {
+  protected _compiler : any;
+  protected _compilerFactory : any;   
   constructor(private injector:Injector){
-    
+ 
   }
   logging:LoggingService=this.injector.get(LoggingService);
     printMessage(input: string) {
