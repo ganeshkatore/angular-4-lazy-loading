@@ -6,8 +6,8 @@ import '../styles/DynamicComponent.scss';
   selector: 'dynamic-component',
   template: `
     <div class="addMargin">
-      <div><strong>Sub Sandwiches!</strong></div>
-      <div>This sub component was loaded dynamically... along with its corresponding CSS styles</div>
+      <div><strong>Dynamic Modules and Components</strong></div>
+      <div>This component was loaded dynamically... along with other stuffs</div>
     </div>
   `
 })

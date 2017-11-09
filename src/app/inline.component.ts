@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'inline-component',
   template: `
   <div>
-    <p>This component is the default component and was loaded inline.</p>
+    <p>This component is the default component and was loaded by default.</p>
     <a routerLink="/dynamic" routerLinkActive="active">Load a dynamic component</a>
   </div>`
 })
