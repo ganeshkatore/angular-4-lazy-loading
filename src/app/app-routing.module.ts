@@ -2,6 +2,9 @@ import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import InlineComponent from './inline.component';
+import { MoviesComponent } from './movies/movies.component';
+
+var providers;
 
 const appRoutes: Routes = [
   {
@@ -13,6 +16,7 @@ const appRoutes: Routes = [
       });
     }
   },
+  
   {
     path: '',
     component: InlineComponent

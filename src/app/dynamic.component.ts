@@ -6,9 +6,11 @@ import { LoggingService } from './looging-service';
 @Component({
   selector: 'dynamic-component',
   template: `
-    <div class="addMargin">
+  <div class="container">
+  
       <div><strong>Dynamic Modules and Components</strong></div>
       <div>This component was loaded dynamically... along with other stuffs</div>
+   
     </div>
   `
 })
