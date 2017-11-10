@@ -10,7 +10,8 @@ import { LoggingService } from './looging-service';
   
       <div><strong>Dynamic Modules and Components</strong></div>
       <div>This component was loaded dynamically... along with other stuffs</div>
-   
+      <strong><a routerLink="/" routerLinkActive="active">Back</a></strong>
+      
     </div>
   `
 })
