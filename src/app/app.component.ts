@@ -10,5 +10,5 @@ import { Component } from '@angular/core';
 export default class AppComponent {}
 
 //TODO:- 
-//Pass service from CORE SPA to dynamic modules
+//Set-up Interface/Class relationship
 //esnext, which browsers are supported?
