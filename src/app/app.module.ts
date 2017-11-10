@@ -5,6 +5,7 @@ import { routes } from './app-routing.module';
 
 import AppComponent from './app.component';
 import InlineComponent from './inline.component';
+import { LoggingService } from './looging-service';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import InlineComponent from './inline.component';
     InlineComponent
   ],
   imports: [ BrowserModule, routes ],
-  bootstrap: [ AppComponent ]
+  bootstrap: [ AppComponent ],
+  providers:[LoggingService]
 })
 export class AppModule {}

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import '../styles/DynamicComponent.scss';
+import { LoggingService } from './looging-service';
 
 @Component({
   selector: 'dynamic-component',
@@ -11,4 +12,8 @@ import '../styles/DynamicComponent.scss';
     </div>
   `
 })
-export default class DynamicComponent {}
+export default class DynamicComponent {
+  constructor(private logging:LoggingService){
+    logging.logToConsole('Logged Message via SPA Core');
+  }
+}
