@@ -1,6 +1,6 @@
 {
   "name": "ng4-code-splitting",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -12,8 +12,7 @@
     "transpile": "tsc",
     "build": "ng build  && npm run transpile"
   },
-  "private": true,
-  "dependencies": {
+   "dependencies": {
     "@angular/animations": "^5.0.0",
     "@angular/common": "^5.0.0",
     "@angular/core": "^5.0.0",
@@ -51,5 +50,10 @@
     "tslint": "~5.7.0",
     "typescript": "^2.4.2",
     "uglify-js": "^3.1.9"
-  }
+  },
+  "publishConfig": {
+    "registry": "http://157.237.139.171/artifactory/api/npm/npm-local"
+  },
+  "typings":"./dist/src/app/index.d.ts"
 }
+
