@@ -9,10 +9,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "transpile": "ngc",
-    "package": "rollup -c",
-    "minify": "uglifyjs dist/bundles/amazing.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/amazing.umd.min.js",
-    "build": "ng build && npm run transpile && npm run package && npm run minify"
+    "transpile": "tsc",
+    "build": "ng build  && npm run transpile"
   },
   "private": true,
   "dependencies": {
