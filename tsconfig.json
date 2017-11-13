@@ -3,7 +3,7 @@
   "compilerOptions": {
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
-    "declaration": false,
+    "declaration": true,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -11,6 +11,9 @@
     "typeRoots": [
       "node_modules/@types"
     ],
+    // "files": [
+    //   "index.ts"
+    // ], //Its giving error
     "lib": [
       "es2017",
       "dom"

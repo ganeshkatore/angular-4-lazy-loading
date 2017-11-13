@@ -1,11 +1,16 @@
+
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "outDir": "../out-tsc/app",
     "baseUrl": "./",
     "module": "esnext",
-    "types": []
-  },
+    "declarationDir": "declarations",
+    "declaration": true,
+    "types": [],
+    "listFiles": true
+
+    },
   "exclude": [
     "test.ts",
     "**/*.spec.ts"
