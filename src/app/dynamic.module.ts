@@ -23,6 +23,5 @@ import { routes } from './dynamic-routing.module';
 })
 export default class DynamicModule {
   //routes = routes;
-
   
 }
