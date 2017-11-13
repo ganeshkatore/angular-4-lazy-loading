@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import '../styles/DynamicComponent.scss';
+// import '../styles/DynamicComponent.scss';
 import { LoggingService } from './looging-service';
 
 @Component({

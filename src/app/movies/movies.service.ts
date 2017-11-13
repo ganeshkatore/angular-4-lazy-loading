@@ -20,7 +20,7 @@ export class MoviesService {
         { id: 9, name:"Lake Placid", directorName:"Steve Miner",releaseYear:"1999" },
         { id: 10, name:"Superman", directorName:"Richard Donner",releaseYear:"1978" }
       ];
-    constructor(private http: Http) { }
+    constructor() { }
 
     getMovies():IMovie[]{
       //Use Http service in case of any remote call

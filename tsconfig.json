@@ -1,33 +1,23 @@
 {
-  "compilerOptions": {
-    "baseUrl": ".",
-    "declaration": true,
-    "stripInternal": true,
-    "experimentalDecorators": true,
-    "strictNullChecks": true,
-    "noImplicitAny": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "paths": {
-      "@angular/core": ["node_modules/@angular/core"],
-      "rxjs/*": ["node_modules/rxjs/*"]
-    },
-    "rootDir": ".",
-    "outDir": "dist",
+  "compileOnSave": false,
+    "compilerOptions": {
+      "outDir": "dist",
     "sourceMap": true,
-    "inlineSources": true,
+      "declaration": true,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
     "target": "es5",
-    "skipLibCheck": true,
-    "lib": [
-      "es2015", 
-      "dom"
-    ]
-  },
-  "include": [
-    "./src/app/index.ts"
-  ],
-  "angularCompilerOptions": {
-    "strictMetadataEmit": true,
-    "genDir": "./dist/declarations"
+      "lib": [
+        "es2017", 
+        "dom"
+      ]
+    },
+    "include": [
+      "./src/app/index.ts"
+    ],
+    "angularCompilerOptions": {
+      "strictMetadataEmit": true,
+      "genDir": "./dist/declarations"
+    }
   }
-}

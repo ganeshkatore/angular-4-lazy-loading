@@ -1,12 +1,3 @@
-//import DynamicComponent from "src/app/dynamic.component";
-
-//import DynamicComponent from "src/app/dynamic.component";
-
-//   export {DynamicModule} from "./dynamic.module"; //its giving error
- // export {} from "src/app/dynamic.component";
- // DynamicComponent
-
-//  import DynamicModule from "./dynamic.module";
 
 export * from "../polyfills";
 export * from "../main";
@@ -18,6 +9,7 @@ export * from "./movies/movies.component";
 export * from "./movies/movies.service";
 export * from "./inline.component";
 export * from "./looging-service";
+
 
 
   
