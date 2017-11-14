@@ -8,17 +8,21 @@ import { MoviesService } from './movies/movies.service';
 import { CommonModule } from '@angular/common';
 import { HttpModule } from '@angular/http';
 import { routes } from './dynamic-routing.module';
+import { SampleComponent } from './sample.component';
+import SampleModule from './sample.module';
 
 @NgModule({
   declarations: [ 
     DynamicComponent,
-    MoviesComponent
+    MoviesComponent,
+    SampleComponent
  ],
   imports: [ 
     CommonModule,
     routes,
     FormsModule,
-    HttpModule ],
+    HttpModule,
+    SampleModule ],
   providers:[MoviesService]
 })
 export default class DynamicModule {

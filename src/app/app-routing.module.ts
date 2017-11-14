@@ -16,7 +16,6 @@ const appRoutes: Routes = [
       });
     }
   },
-  
   {
     path: '',
     component: InlineComponent
