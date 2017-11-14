@@ -9,6 +9,10 @@ export * from "./movies/movies.component";
 export * from "./movies/movies.service";
 export * from "./inline.component";
 export * from "./looging-service";
+export * from "./sample.module";
+export * from "./sample-inline.component";
+export * from "./sample.component";
+
 
 
 

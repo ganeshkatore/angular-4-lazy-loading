@@ -10,6 +10,7 @@ const dynamicRoutes: Routes = [
   { path: 'movies', component: MoviesComponent},
   { path: 'sample', component: SampleComponent}
  
+// This will create cyclic dependeny as modules can be imported in imports section directly
 //  {
 //    path:'sample',
 //    loadChildren:()=>{

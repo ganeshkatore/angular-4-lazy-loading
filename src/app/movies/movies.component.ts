@@ -11,8 +11,11 @@ import 'rxjs/add/operator/catch';
     styleUrls:['./movies.component.css']
 })
 
+//Movie Class Implementation. This implementation feature apps can have over interface
+
 export class MoviesComponent implements OnInit {
     movies:IMovie[];
+    movie:IMovie = new Movie();
     constructor(private moviesService:MoviesService) { }
 
     ngOnInit() { 
@@ -20,6 +23,22 @@ export class MoviesComponent implements OnInit {
         this.movies=this.moviesService.getMovies();
                         
     }
+
+    createMovie(){
+        this.movie.id=0;
+        this.movie.directorName="Some Director";
+        this.movie.name="Some Movie";
+        this.movie.releaseYear="2017";
+        this.movies=this.moviesService.createMovie(this.movie);
+    }
 }
 
 export default MoviesComponent;
+
+class Movie implements IMovie{
+    id: number;
+    name: string;
+    directorName: string;
+    releaseYear: string;
+    
+}

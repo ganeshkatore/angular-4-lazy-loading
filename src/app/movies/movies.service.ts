@@ -26,5 +26,14 @@ export class MoviesService {
       //Use Http service in case of any remote call
       return this.movies;
     }
+
+    //Check for highesht Id on the fly and increment by one
+    createMovie(vm:IMovie):any{
+      let id = 0; //Initialized
+      this.movies.forEach(c=>{if(c.id>=id)id=c.id+1});
+      vm.id=id;
+      this.movies.push(vm);
+      return this.movies;
+    }
     
 }
